@@ -10,7 +10,7 @@ import Login from "./assets/pages/Login";
 import Inicio from "./assets/pages/inicio";
 import Home from "./assets/components/home";
 import Voz from "./assets/pages/voz";
-import Pagamento from "./assets/pages/pagamento";
+import Pagamento from "./assets/components/Pagamento";
 import Carrinho from "./assets/pages/Carrinho";
 import Perfil from "./assets/components/perfil";
 import Notificacoes from "./assets/components/notificacoes";
@@ -24,7 +24,7 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/login" element={<Login />} />
         <Route path="/loja" element={<Loja />} />
-        <Route path="/pagamento" element={<Pagamento />} />
+        <Route path="/Pagamento" element={<Pagamento />} />
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/Carrinho" element={<Carrinho />} />
         <Route path="/oficina" element={<Oficina />} />

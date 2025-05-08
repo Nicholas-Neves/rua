@@ -5,6 +5,16 @@ const playlist = [
   {
     src: "/music/Police Truck.mp3",
     title: "Police Truck",
+    src: "/music/She's in Parties.mp3",
+    title: "Shes in Parties",
+    src: "/music/Skate & Destroy.mp3",
+    title: "Skate & Destroy",
+    src: "/music/Kim Wilde - Kids in America (Official Music Video).mp3",
+    title: "Kids in America",
+    src: "/music/Kavinsky - Nightcall (Drive Original Movie Soundtrack) (Official Audio).mp3",
+    title: "Nightcall",
+    src: "/music/I Wanna Be Your Dog.mp3",
+    title: "I Wanna Be Your Dog",
   },
 ];
 
