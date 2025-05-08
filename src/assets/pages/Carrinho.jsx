@@ -47,7 +47,7 @@ function Carrinho() {
       <div className={Styles.valortotal}>
         <h3 className={Styles.totaal}>Valor Total</h3>
         <p className={Styles.va}>R$ 250,00</p>
-        <Link to="/Pagamento"><button>Continuar</button></Link>
+        <Link to="/inicio"><button>Continuar</button></Link>
       </div>
     </section>
     <Footer />

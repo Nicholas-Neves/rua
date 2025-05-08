@@ -1,156 +1,161 @@
-.container {
-    background-color: black;
-    color: white;
+.pagamento-container {
+    max-width: 700px;
+    margin: 40px auto;
     font-family: sans-serif;
-    padding: 1rem;
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    color: #fff;
+    background-color: #111;
+    padding: 20px;
   }
   
-  .header {
+  .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .box {
+    background: #222;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
-  
-  .voltar {
-    color: red;
-    font-size: 2rem;
-    cursor: pointer;
+    gap: 16px;
+    justify-content: space-between;
   }
   
   .produto {
-    background: #ccc;
-    border-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+    align-items: flex-start;
   }
   
-  .imgPlaceholder {
+  .imagem-produto {
     background: red;
+    width: 80px;
+    height: 80px;
     color: white;
-    padding: 0.5rem;
-    font-weight: bold;
-    width: 70px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  .nome-produto {
+    font-size: 18px;
+    font-weight: bold;
   }
   
   .detalhes {
-    flex-grow: 1;
+    font-size: 14px;
+    color: #bbb;
   }
   
-  .valor {
+  .preco {
+    font-size: 18px;
     font-weight: bold;
-    font-size: 1.2rem;
+    color: #fff;
   }
   
   .cupom {
-    background: white;
-    color: black;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
   
-  .cupomCodigo {
+  .info-cupom {
+    margin-bottom: 8px;
+    color: #ddd;
+  }
+  
+  .codigo-cupom {
     background: red;
-    color: white;
-    padding: 0.5rem 1rem;
+    padding: 6px 16px;
     border-radius: 20px;
-    margin-top: 0.5rem;
     font-weight: bold;
-  }
-  
-  .entrega {
-    background: white;
-    color: black;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
   }
   
   .envio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .etiqueta-sedex {
     background: yellow;
-    display: inline-block;
-    padding: 0.25rem 1rem;
-    font-weight: bold;
-    border-radius: 6px;
-    margin-bottom: 0.5rem;
-  }
-  
-  .pagamento {
-    background: white;
     color: black;
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 6px;
   }
   
-  .pagamento h3 {
-    margin-bottom: 0.5rem;
+  .pagamento-forma {
+    flex-direction: column;
+    align-items: flex-start;
   }
   
-  label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0.5rem 0;
+  .subtitulo {
+    font-weight: bold;
+    margin-bottom: 10px;
   }
   
   .opcao {
-    background: yellow;
-    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0;
+    background: #333;
+    padding: 10px;
     border-radius: 8px;
-    flex-grow: 1;
+    width: 100%;
   }
   
-  .faixa {
-    background: yellow;
-    color: black;
-    text-align: center;
-    padding: 0.5rem;
+  .opcao span {
+    color: yellow;
     font-weight: bold;
   }
   
-  .resumo {
-    background: #ccc;
+  .faixa-rua {
+    background: yellow;
     color: black;
-    padding: 1rem;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .resumo {
+    background: #222;
+    padding: 16px;
     border-radius: 10px;
   }
   
   .linha {
     display: flex;
     justify-content: space-between;
-    margin: 0.25rem 0;
+    margin: 6px 0;
+    font-size: 16px;
   }
   
   .total {
-    display: flex;
-    justify-content: space-between;
     font-weight: bold;
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 18px;
   }
   
-  .continuar {
+  .botao-continuar {
+    width: 100%;
+    margin-top: 20px;
     background: red;
     color: white;
-    padding: 1rem;
-    font-weight: bold;
-    font-size: 1rem;
+    padding: 14px;
+    font-size: 16px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s ease;
+    font-weight: bold;
+    transition: 0.3s;
   }
   
-  .continuar:hover {
+  .botao-continuar:hover {
     background: darkred;
   }
   

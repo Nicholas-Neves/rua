@@ -1,71 +1,55 @@
-import styles from './pagamento.css';
-import { useState } from 'react';
+import './pagamento.css';
+
+import Faixa from '../img/FAIXA.png';
+
 
 function Pagamento() {
-  const [metodo, setMetodo] = useState('');
-
   return (
-    <div className={styles.container}>
-      <header className={styles.header}>
-        <span className={styles.voltar}>&larr;</span>
-        <h1>Comprar</h1>
-        <span className={styles.cart}>🛒</span>
-      </header>
+    <div className="pagamento-container">
+      <h1 className="titulo">Finalizar Compra</h1>
 
-      <section className={styles.produto}>
-        <div className={styles.imgPlaceholder}>Imagem</div>
-        <div className={styles.detalhes}>
-          <h2>Tenis bla ble blu</h2>
-          <p>Cor tal tal</p>
-          <p>Tamanho ~ Tal tal</p>
-          <p>Quantidade</p>
+      <div className="box produto">
+        <div className="imagem-produto">Imagem</div>
+        <div>
+          <p className="nome-produto">Tênis bla ble blu</p>
+          <p className="detalhes">Cor tal tal · Tamanho tal tal · Quantidade</p>
         </div>
-        <div className={styles.valor}>R$414,00</div>
-      </section>
+        <div className="preco">R$414,00</div>
+      </div>
 
-      <section className={styles.cupom}>
-        <p>Cupom de desconto automático!</p>
-        <div className={styles.cupomCodigo}>RUA8</div>
-      </section>
+      <div className="box cupom">
+        <p className="info-cupom">Cupom de desconto aplicado automaticamente!</p>
+        <div className="codigo-cupom">RUA8</div>
+      </div>
 
-      <section className={styles.entrega}>
-        <div className={styles.envio}>SEDEX</div>
-        <p>Chegada entre dia <strong>07 e 08 de maio</strong></p>
-      </section>
+      <div className="box envio">
+        <div className="etiqueta-sedex">SEDEX</div>
+        <p>Chegada entre os dias <strong>07 e 08 de maio</strong></p>
+      </div>
 
-      <section className={styles.pagamento}>
-        <h3>Forma de Pagamento</h3>
-        <label>
-          <input
-            type="radio"
-            name="pagamento"
-            value="cartao"
-            checked={metodo === 'cartao'}
-            onChange={() => setMetodo('cartao')}
-          />
-          <span className={styles.opcao}>Cartão Débito e Crédito 💳</span>
+      <div className="box pagamento-forma">
+        <p className="subtitulo">Forma de Pagamento</p>
+        <label className="opcao">
+          <input type="radio" name="pagamento" />
+          <span>Cartão Débito e Crédito</span>
         </label>
-        <label>
-          <input
-            type="radio"
-            name="pagamento"
-            value="pix"
-            checked={metodo === 'pix'}
-            onChange={() => setMetodo('pix')}
-          />
-          <span className={styles.opcao}>Pix ou Boleto 📄</span>
+        <label className="opcao">
+          <input type="radio" name="pagamento" />
+          <span>Pix ou Boleto</span>
         </label>
-      </section>
+      </div>
 
-      <div className={styles.faixa}>RUA - RUA - RUA - RUA</div>
+      <div className={Styles.faixacar}>
+        <img src={Faixa} alt="Faixa decorativa" />
+      </div>
 
-      <section className={styles.resumo}>
-        <div className={styles.linha}><span>Frete</span><span>Grátis</span></div>
-        <div className={styles.linha}><span>Cupom</span><span>-R$100,00</span></div>
-        <div className={styles.total}><span>Valor Total</span><span>R$200,00</span></div>
-      </section>
-
-      <button className={styles.continuar}>Continuar</button>
+ 
+      <div className="resumo">
+        <div className="linha"><span>Frete</span><span>Grátis</span></div>
+        <div className="linha"><span>Cupom</span><span>-R$100,00</span></div>
+        <div className="linha total"><span>Total</span><span>R$200,00</span></div>
+        <button className="botao-continuar">Continuar</button>
+      </div>
     </div>
   );
 }
