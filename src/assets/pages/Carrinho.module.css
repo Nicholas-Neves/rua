@@ -1,0 +1,125 @@
+.fundocar {
+    background-color: black;
+    background-image: url(../img/background[1].png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .textocar {
+    color: aliceblue;
+    text-align: center;
+  }
+  
+  .Debora {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+  }
+  
+  .compra img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .faixacar img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .Meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skt {
+    background-color: aliceblue;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 900px;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .Botom img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .produto img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .textos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .SPM {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .v, .tam, .Qtd {
+    font-size: 0.95rem;
+  }
+  
+  .valortotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  .totaal {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .va {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: 2px groove yellow;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .valortotal button {
+    background-color: red;
+    border: 2px groove darkred;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .valortotal button:hover {
+    background-color: darkred;
+  }
+  
